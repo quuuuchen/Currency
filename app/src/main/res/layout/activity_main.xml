@@ -12,13 +12,13 @@
         android:layout_height="32dp"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="40dp"
-        android:text="NTD"
+        android:text="@string/ntd"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText_ntd"
+        android:id="@+id/ed_ntd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -36,7 +36,8 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="#00574B"
-        android:text="Go"
+        android:onClick="change"
+        android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ntd" />
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="64dp"
-        android:text="JP"
+        android:text="@string/jp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="@+id/ntd"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -57,7 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="US"
+        android:text="@string/us"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="@+id/JP"
         app:layout_constraintTop_toBottomOf="@+id/JP" />
@@ -67,17 +68,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="None"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/JP"
         app:layout_constraintTop_toTopOf="@+id/JP" />
 
     <TextView
-        android:id="@+id/US_doller"
+        android:id="@+id/us_doller"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="None"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toEndOf="@+id/US"
         app:layout_constraintTop_toTopOf="@+id/US" />
